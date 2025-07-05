@@ -1,0 +1,57 @@
+🚁 DRONE 프로젝트 핵심 파일 요약
+================================
+
+✅ 정리 완료! 핵심 파일들만 남겼습니다.
+
+📁 핵심 파일 구조:
+=================
+
+🎮 시스템 제어 (순서대로 실행):
+  0_check_gui_requirements.bat  - GUI 요구사항 확인
+  1_start_system.bat           - 시스템 시작 (Gazebo + ROS2)
+  2_takeoff.bat               - 드론 이륙
+  4_landing.bat               - 드론 착륙
+
+🕹️ 드론 제어:
+  3_keyboard_control.bat       - 키보드 메뉴 방식 제어
+  6_gui_teleop_en.bat         - GUI 그래픽 제어 (영어, 추천)
+
+🐍 핵심 스크립트:
+  gui_teleop_control_en.py     - GUI 텔레오퍼레이션 제어 (36KB)
+  advanced_teleop_control.py   - 고급 텔레오퍼레이션 제어 (21KB)
+  check_gui_requirements.py    - GUI 요구사항 확인 스크립트
+
+📋 프로젝트 설정:
+  package.xml                  - ROS2 패키지 설정
+  CMakeLists.txt              - 빌드 설정
+
+📖 문서:
+  README_Usage_Guide.txt       - 사용법 가이드
+  GUI_Manual_EN.txt           - GUI 사용 매뉴얼 (영어)
+
+📁 핵심 폴더:
+  config/                     - 설정 파일들 (RVIZ 등)
+  launch/                     - ROS2 런치 파일들
+  maps/                       - 지도 및 환경 설정
+  models/                     - 학습된 PPO 모델들
+  install/                    - ROS2 설치 파일들
+  build/                      - 빌드 파일들
+  log/, logs/                 - 로그 파일들
+
+🚀 사용 순서:
+=============
+1️⃣ 0_check_gui_requirements.bat (선택사항)
+2️⃣ 1_start_system.bat
+3️⃣ 2_takeoff.bat
+4️⃣ 6_gui_teleop_en.bat (추천) 또는 3_keyboard_control.bat
+5️⃣ 4_landing.bat
+
+💡 주요 특징:
+=============
+- PPO 강화학습 기반 드론 제어
+- Gazebo 시뮬레이션 환경
+- 실시간 GUI 텔레오퍼레이션
+- 장애물 회피 기능
+- ROS2 Humble 기반 시스템
+
+정리 완료일: 2025년 1월 25일 
