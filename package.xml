@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>ppo_drone_ros2</name>
+  <version>1.0.0</version>
+  <description>PPO 강화학습 기반 ROS2 드론 제어 패키지</description>
+  
+  <maintainer email="your.email@example.com">Your Name</maintainer>
+  <license>MIT</license>
+  
+  <url type="website">https://github.com/your-team/real-drone-control</url>
+  <url type="bugtracker">https://github.com/your-team/real-drone-control/issues</url>
+  <url type="repository">https://github.com/your-team/real-drone-control</url>
+  
+  <author email="team@example.com">Drone Team</author>
+  
+  <!-- ROS2 빌드 도구 -->
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <buildtool_depend>ament_cmake_python</buildtool_depend>
+  
+  <!-- ROS2 Core Dependencies -->
+  <depend>rclpy</depend>
+  <depend>rclcpp</depend>
+  
+  <!-- Message Dependencies -->
+  <depend>geometry_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>nav_msgs</depend>
+  <depend>std_msgs</depend>
+  <depend>tf2_ros</depend>
+  <depend>tf2_geometry_msgs</depend>
+  
+  <!-- MAVROS Dependencies -->
+  <depend>mavros</depend>
+  <depend>mavros_msgs</depend>
+  
+  <!-- Build Dependencies -->
+  <build_depend>python3-numpy</build_depend>
+  <build_depend>python3-matplotlib</build_depend>
+  
+  <!-- Execution Dependencies -->
+  <exec_depend>python3-numpy</exec_depend>
+  <exec_depend>python3-matplotlib</exec_depend>
+  <exec_depend>python3-scipy</exec_depend>
+  
+  <!-- 네비게이션 (고급 기능) -->
+  <depend>nav2_common</depend>
+  <depend>nav2_msgs</depend>
+  
+  <!-- 시각화 -->
+  <depend>visualization_msgs</depend>
+  <depend>rviz2</depend>
+  
+  <!-- 테스트 도구 -->
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+  <test_depend>ament_cmake_pytest</test_depend>
+  
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package> 
